@@ -1,0 +1,30 @@
+PANDUAN SINGKAT MENJALANKAN WEBSITE DESA CEMPAKA BARAT (WINDOWS)
+
+1. Ekstrak folder cempaka_barat_app dari file ZIP ke Desktop atau Documents.
+   Jangan menjalankan aplikasi langsung dari dalam jendela ZIP.
+
+2. Pastikan Python 3 sudah terpasang di Windows.
+   Saat memasang Python, centang pilihan "Add Python to PATH".
+
+3. Buka folder cempaka_barat_app yang sudah diekstrak.
+
+4. Klik dua kali file run_windows.bat.
+   Pada proses pertama, komputer perlu koneksi internet untuk memasang paket yang dibutuhkan.
+   Tunggu sampai proses selesai. Jendela hitam harus tetap terbuka selama website dipakai.
+
+5. Buka browser dan kunjungi:
+   http://127.0.0.1:5000
+
+6. Untuk membuat akun admin, buka Command Prompt di dalam folder aplikasi lalu jalankan:
+   .venv\Scripts\python.exe create_admin.py
+   Ikuti pertanyaan untuk membuat username dan kata sandi minimal 12 karakter.
+   Setelah akun dibuat, buka:
+   http://127.0.0.1:5000/admin
+
+7. Untuk menghentikan website, kembali ke jendela hitam lalu tekan Ctrl+C.
+   Untuk membuka lagi nanti, klik dua kali run_windows.bat.
+
+CATATAN PENTING
+- Jangan membagikan kata sandi admin.
+- Ini menjalankan website di komputer sendiri (localhost), belum membuatnya publik di internet.
+- Kode aplikasi belum dapat diuji penuh di lingkungan pembuat file ini karena Flask tidak tersedia di sana. Jika muncul pesan error, foto/salin pesan tersebut agar bisa diperbaiki.
